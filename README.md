@@ -4,6 +4,10 @@ This unique comment Action creates or updates a unique comment in the issue.
 
 > **pull request** is also a specific issue.
 
+## Action Name
+
+**taoliujun/action-unique-comment**
+
 ## Usage
 
 ```yml
@@ -19,7 +23,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Create or update a comment
-        uses: taoliujun/unique-comment-action
+        uses: taoliujun/action-unique-comment@v1
         with:
             uniqueIdentifier: ${{ github.workflow }}
             body: |
