@@ -1,0 +1,31 @@
+name: unique-comment
+description: create or update a unique comment
+
+runs:
+    using: 'node20'
+    main: './dist/index.js'
+
+inputs:
+    token:
+        description: 'GitHub token'
+        required: false
+        default: ${{ github.token }}
+    owner:
+        description: 'Repository owner'
+        required: false
+        default: ${{ github.event.repository.owner.login }}
+    repo:
+        description: 'Repository name'
+        required: false
+        default: ${{ github.event.repository.name }}
+    issue_number:
+        description: 'Issue number'
+        required: false
+        default: ${{ github.event.number }}
+    body:
+        description: 'Comment body'
+        required: false
+    uniqueIdentifier:
+        description: 'Unique identifier for comment'
+        required: false
+        default: 'unique-comment'
