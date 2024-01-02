@@ -1,6 +1,6 @@
-# Unique comment Github Action
+# taoliujun/action-unique-comment
 
-This unique comment Action creates or updates a unique comment in the issue.
+This unique comment Action creates or updates a unique comment in the same issue.
 
 > **pull request** is also a specific issue.
 
