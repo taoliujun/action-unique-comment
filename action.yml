@@ -1,5 +1,5 @@
 name: unique-comment
-description: create or update a unique comment
+description: create or update a unique comment for the same issue or pull request
 
 runs:
     using: 'node20'
