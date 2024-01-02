@@ -1,5 +1,10 @@
 name: unique-comment
 description: create or update a unique comment for the same issue or pull request
+author: taoliujun
+
+branding:
+    icon: at-sign
+    color: blue
 
 runs:
     using: 'node20'
