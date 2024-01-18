@@ -23,7 +23,7 @@
     "@changesets/cli": "^2.27.1",
     "@commitlint/cli": "^18.4.4",
     "@commitlint/config-conventional": "^18.4.4",
-    "@taoliujun/eslint-config": "^2.0.1",
+    "@taoliujun/eslint-config": "^2.1.0",
     "@types/node": "^20.10.6",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
