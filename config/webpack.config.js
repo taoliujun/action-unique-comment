@@ -6,4 +6,7 @@ module.exports = {
         filename: 'index.js',
         clean: true,
     },
+    optimization: {
+        minimize: false
+    }
 };

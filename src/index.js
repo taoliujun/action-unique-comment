@@ -22,21 +22,35 @@ const main = async () => {
     const botComment = comments.data.find((v) => v.body.includes(uniqueIdentifier));
 
     if (botComment) {
-        core.info('update comment successfully.');
-        await octokit.rest.issues.updateComment({
-            owner,
-            repo,
-            comment_id: botComment.id,
-            body,
-        });
+        octokit.rest.issues
+            .updateComment({
+                owner,
+                repo,
+                comment_id: botComment.id,
+                body,
+            })
+            .then(() => {
+                core.info(`update comment successfully.`);
+            })
+            .catch((err) => {
+                core.error(`update comment failed.`);
+                core.error(err);
+            });
     } else {
-        core.info('create comment successfully.');
-        await octokit.rest.issues.createComment({
-            owner,
-            repo,
-            issue_number: issueNumber,
-            body,
-        });
+        octokit.rest.issues
+            .createComment({
+                owner,
+                repo,
+                issue_number: issueNumber,
+                body,
+            })
+            .then(() => {
+                core.info(`create comment successfully.`);
+            })
+            .catch((err) => {
+                core.error(`create comment failed.`);
+                core.error(err);
+            });
     }
 };
 

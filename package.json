@@ -1,14 +1,12 @@
 {
   "name": "action-unique-comment",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "private": true,
   "author": "taoliujun",
   "license": "MIT",
   "scripts": {
     "changelog": "npm exec changeset add",
     "version": "npm exec changeset version",
-    "release": "npm exec changeset publish",
-    "release:token": "cp -f .npmrc .npmrc.bak && echo \"\n//registry.npmjs.org/:_authToken=${NPM_TOKEN}\" >> .npmrc && npm exec changeset publish && cp -f .npmrc.bak .npmrc && rm .npmrc.bak",
     "build": "webpack --config ./config/webpack.config.js",
     "lint": "eslint --ext .ts,.js --cache",
     "test": "echo 'test'",
