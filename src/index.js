@@ -34,7 +34,7 @@ const main = async () => {
             })
             .catch((err) => {
                 core.error(`update comment failed.`);
-                core.error(err);
+                throw err;
             });
     } else {
         octokit.rest.issues
@@ -49,7 +49,7 @@ const main = async () => {
             })
             .catch((err) => {
                 core.error(`create comment failed.`);
-                core.error(err);
+                throw err;
             });
     }
 };
