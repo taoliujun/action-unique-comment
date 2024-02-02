@@ -2,7 +2,7 @@
     $schema: 'https://docs.renovatebot.com/renovate-schema.json',
     extends: ['config:recommended'],
     timezone: 'Asia/Shanghai',
-    schedule: ['before 2:00 am'],
+    schedule: ['every weekend'],
     prConcurrentLimit: 0,
     prHourlyLimit: 0,
     rangeStrategy: 'bump',
