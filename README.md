@@ -8,9 +8,9 @@ This unique comment Action creates or updates a unique comment in the same issue
 
 **taoliujun/action-unique-comment**
 
-> `taoliujun/action-unique-comment@v1` means use the branch "v1", which will be updated automatically.
+> `taoliujun/action-unique-comment@v1` means use the major version tag "v1", which will be automatically updated with features and bug fixes.
 
-> `taoliujun/action-unique-comment@v1.0.0` means use the tag "v1.0.0", which use fixed code will not automatically fix bugs.
+> `taoliujun/action-unique-comment@v1.0.0` means use the fixed version tag "v1.0.0", which will not be automatically updated.
 
 ## Usage
 
