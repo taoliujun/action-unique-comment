@@ -29,7 +29,7 @@ jobs:
         with:
             uniqueIdentifier: ${{ github.workflow }}
             body: |
-                hello.
+                hello world.
 ```
 
 ## Inputs
