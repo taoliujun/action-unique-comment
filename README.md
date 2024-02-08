@@ -8,6 +8,8 @@ This unique comment Action creates or updates a unique comment in the same issue
 
 **taoliujun/action-unique-comment**
 
+> Use the syntax "uses: taoliujun/action-unique-comment@1" instead of "uses: taoliujun/action-unique-comment@v1". Because "@v1" indicates a tag, it will not be automatically upgraded. @1 indicates branch 1, which will be automatically upgraded.
+
 ## Usage
 
 ```yml
@@ -23,7 +25,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Create or update a comment
-        uses: taoliujun/action-unique-comment@v1
+        uses: taoliujun/action-unique-comment@1
         with:
             uniqueIdentifier: ${{ github.workflow }}
             body: |
