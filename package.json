@@ -19,8 +19,8 @@
   "devDependencies": {
     "@changesets/changelog-git": "^0.2.0",
     "@changesets/cli": "^2.27.1",
-    "@commitlint/cli": "^18.6.0",
-    "@commitlint/config-conventional": "^18.6.0",
+    "@commitlint/cli": "^18.6.1",
+    "@commitlint/config-conventional": "^18.6.2",
     "@taoliujun/eslint-config": "^2.1.0",
     "@types/node": "^20.11.16",
     "husky": "^8.0.3",
